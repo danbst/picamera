@@ -448,7 +448,7 @@ vc_dispmanx_update_start.argtypes = [ct.c_int32]
 vc_dispmanx_update_start.restype = DISPMANX_UPDATE_HANDLE_T
 
 vc_dispmanx_element_add = _lib.vc_dispmanx_element_add
-vc_dispmanx_element_add.argtypes = [DISPMANX_UPDATE_HANDLE_T, DISPMANX_DISPLAY_HANDLE_T, ct.c_int32, ct.POINTER(VC_RECT_T), DISPMANX_RESOURCE_HANDLE_T, ct.POINTER(VC_RECT_T), DISPMANX_PROTECTION_T, VC_DISPMANX_ALPHA_T, DISPMANX_CLAMP_T, DISPMANX_TRANSFORM_T]
+vc_dispmanx_element_add.argtypes = [DISPMANX_UPDATE_HANDLE_T, DISPMANX_DISPLAY_HANDLE_T, ct.c_int32, ct.POINTER(VC_RECT_T), DISPMANX_RESOURCE_HANDLE_T, ct.POINTER(VC_RECT_T), DISPMANX_PROTECTION_T, VC_DISPMANX_ALPHA_T, ct.POINTER(DISPMANX_CLAMP_T), ct.POINTER(DISPMANX_TRANSFORM_T)]
 vc_dispmanx_element_add.restype = DISPMANX_ELEMENT_HANDLE_T
 
 vc_dispmanx_element_change_source = _lib.vc_dispmanx_element_change_source
